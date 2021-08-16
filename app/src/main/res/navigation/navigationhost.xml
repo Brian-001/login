@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationhost"
+    app:startDestination="@id/createAccountFragment2">
+
+    <fragment
+        android:id="@+id/createAccountFragment2"
+        android:name="com.example.loginapp.CreateAccountFragment"
+        android:label="fragment_create_account"
+        tools:layout="@layout/fragment_create_account" >
+        <action
+            android:id="@+id/action_createAccountFragment2_to_welcomeFragment2"
+            app:destination="@id/welcomeFragment2" />
+        <action
+            android:id="@+id/action_createAccountFragment2_to_loginFragment22"
+            app:destination="@id/loginFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageFragment2"
+        android:name="com.example.loginapp.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment2_to_welcomeFragment2"
+            app:destination="@id/welcomeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.example.loginapp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment2_to_welcomeFragment2"
+            app:destination="@id/welcomeFragment2" />
+        <action
+            android:id="@+id/action_loginFragment2_to_homePageFragment2"
+            app:destination="@id/homePageFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment2"
+        android:name="com.example.loginapp.welcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment2_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+        <action
+            android:id="@+id/action_welcomeFragment2_to_createAccountFragment2"
+            app:destination="@id/createAccountFragment2" />
+    </fragment>
+</navigation>
